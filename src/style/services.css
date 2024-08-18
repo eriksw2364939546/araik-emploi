@@ -1,0 +1,12 @@
+.services .container{
+    text-align: center;
+}
+
+.services h3{
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+.services__descr{
+font-size: 20px;
+color: rgba(101, 102, 92, 1)
+}

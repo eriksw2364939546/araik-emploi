@@ -1,0 +1,36 @@
+.advantages{
+    margin: 64px 0 128px 0;
+}
+
+.advantages__item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.advantages__item img{
+    width: 32px;
+}
+
+.advantages__item p{
+    font-size: 20px;
+}
+
+/* ______________________________ADAPTIVE________________________ */
+
+
+@media all and (max-width: 720px){
+    .advantages .row{
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+    .advantages__item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: antiquewhite;
+        width: 100%;
+    }
+}

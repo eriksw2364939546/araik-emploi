@@ -1,0 +1,43 @@
+@media all and (max-width: 440px){
+
+    header .row{
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        height: fit-content;
+        line-height: 74px;
+    }
+    .header__logo{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+        width: 100%;
+    }
+    .header__logo span{
+        font-size: 16px;
+        background: black;
+        color: white;
+        height: 30px;
+        line-height: 30px;
+        padding: 2px 2px;
+        border-radius: 5px;
+    }
+    .header__item{
+        font-size: 16px;
+    }
+}
+
+
+
+@media all and (max-width: 380px){
+
+    .header__logo span{
+        font-size: 16px;
+    }
+
+}

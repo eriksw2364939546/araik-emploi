@@ -1,0 +1,146 @@
+.alpha__img{
+   max-width: 720px;
+}
+.alpha__img img{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.alpha__img-adaptive{
+    display: none;
+    max-width: 720px;
+}
+
+.alpha__img-adaptive img{
+width: 100%;
+}
+
+.alpha{
+    margin: 0 ;
+    background: rgb(247, 247, 246);
+    position: relative;
+}
+.alpha .container{
+    padding: 120px 0;
+}
+
+.alpha .row{
+    width: 50%;
+}
+
+.alpha__descr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 720px;
+
+
+}
+.alpha__descr-items{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+
+
+
+.alpha__descr p:nth-child(1){
+    background-color: antiquewhite;
+    border-radius: 32px;
+    width: 250px;
+    text-align: center;
+    padding: 3px 3px;
+    font-size: 14px;
+}
+.descr__p{
+color: rgba(101, 102, 92, 1);
+font-size: 20px;
+}
+
+.alpha__descr-items h1{
+    font-size: 40px;
+    margin: 49.6px 0;
+}
+
+/* ______________________________ADAPTIVE________________________ */
+
+@media all and (max-width: 1350px){
+    .alpha .container{
+        padding: 70px 10px;
+    }
+
+
+}
+
+@media all and (max-width: 1210px){
+    .alpha .container{
+        padding: 30px 10px;
+    }
+
+    .alpha__descr-items h1{
+        font-size: 30px;
+        margin: 49.6px 0;
+    }
+
+    .descr__p{
+        color: rgba(101, 102, 92, 1);
+        font-size: 18px;
+        }
+
+}
+
+@media all and (max-width: 1000px){
+    .alpha .container{
+        padding: 10px 10px;
+    }
+    .alpha__descr-items h1{
+        font-size: 25px;
+        margin: 30.6px 0;
+    }
+
+    .descr__p{
+        color: rgba(101, 102, 92, 1);
+        font-size: 16px;
+        }
+
+        .alpha .row{
+            width: 100%;
+        }
+
+}
+@media all and (max-width: 770px){
+    .alpha .row{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .alpha__img{
+        display: none;
+    }
+
+    .alpha__img-adaptive{
+        display: block;
+    }
+
+}
+@media all and (max-width: 420px){
+    .descr__p{
+        color: rgba(101, 102, 92, 1);
+        font-size: 14px;
+        width: 300px;
+        }
+
+        .alpha__descr-items h1{
+            font-size: 20px;
+            margin: 30.6px 0;
+        }
+    
+
+}
+
