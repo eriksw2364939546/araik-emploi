@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./src/style/services.css">
     <link rel="stylesheet" href="./src/style/slider.css">
     <link rel="stylesheet" href="./src/style/footer.css">
+    <link rel="stylesheet" href="./src/style/contact-form.css">
+    <link rel="stylesheet" href="./src/style/modal.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <!-- git -->
@@ -44,7 +46,8 @@
                         <p>La meilleure équipe de constructeurs</p>
                         <h1>Rénovez votre maison</h1>
                         <p class="descr__p"> Nous sommes des artisans expérimentés en rénovation,<br> créant confort et style dans chaque appartement,<br> garantissant un travail de qualité.</p>
-                       </div>
+                        <button class="open__modal">Contactez-nous</button>  
+                    </div>
 
                     </div>
 
@@ -208,8 +211,32 @@
 
             </div>
 
-
         </section>
+
+        <section class="contact-form">
+            <div class="container">
+              <h3>Contactez-nous</h3>
+              <p class="form__descr">
+                Remplissez le formulaire ci-dessous pour nous envoyer un message.
+              </p>
+              <form action="#" method="post" class="form">
+                <div class="form__group">
+                  <input type="text" name="name" placeholder="Votre nom" required />
+                </div>
+                <div class="form__group">
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="form__group">
+                  <input type="tel" name="phone" placeholder="Téléphone" required />
+                </div>
+                <div class="form__group">
+                  <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="form__btn">Envoyer</button>
+              </form>
+            </div>
+          </section>
+          
 
 
     </main>
@@ -224,7 +251,34 @@
 
     </footer>
 
+  <div class="modal">
+    <div class="modal-window">
+        <span class="close-modal">&times;</span>
+        <h3>Contactez-nous</h3>
+        <p class="modal__descr">
+            Contactez-nous et obtenez une consultation gratuite!
+        </p>
+        <form action="#" method="post" class="form">
+          <div class="form__group">
+            <input type="text" name="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form__group">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="form__group">
+            <input type="tel" name="phone" placeholder="Téléphone" required />
+          </div>
+          <div class="form__group">
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+          </div>
+          <button type="submit" class="form__btn">Envoyer</button>
+        </form>
+    </div>
+  </div>
+  
+
       <script defer  src="./index.js"></script>
+      <script defer src="./src/script/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
 </body>
