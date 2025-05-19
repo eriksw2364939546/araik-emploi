@@ -75,3 +75,36 @@ transition: all 0.4s;
     min-height: 80px;
     transition: border-color 0.3s ease;
   }
+
+  .modal__positiv-message {
+	position: fixed;
+	display: none;
+	z-index: 500;
+	top: 130px;
+	left: -250px;
+	background: rgb(0, 190, 0);
+	width: 250px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 0px 10px 10px 0px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1.7s;
+}
+.modal__positiv-message p {
+	color: white;
+	font-size: 17px;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.pozitiv-active {
+	z-index: 500;
+	left: 0px;
+}
+
+.pozitiv-active p {
+	transition: all 1.7s;
+	display: block;
+}
