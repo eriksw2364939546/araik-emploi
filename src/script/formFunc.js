@@ -22,7 +22,7 @@ async function form() {
         if (contactForm !== null) {
             contactForm.addEventListener("submit", (event) => {
                 event.preventDefault();
-                const message = `Bonjour! Mon nom est:\n${contactNameInp.value}...\n`;
+                const message = `Bonjour! Mon nom est:\n${contactNameInp.value}.\n\nMon email:\n${contactEmailInp.value}.\n\nMon téléphone:\n${contactPhoneInp.value}.\n\nMessage:\n${contactMessageInp.value}`
                 const url = `https://wa.me/${targetNumber}?text=${encodeURIComponent(message)}`;
                 window.open(url, "_blank");
                 modPositivMessage.classList.add("pozitiv-active");
@@ -40,7 +40,7 @@ async function form() {
         if (modalForm !== null) {
             modalForm.addEventListener("submit", (event) => {
                 event.preventDefault();
-                const message = `Bonjour! Mon nom est:\n${modalNameInp.value}...\n`;
+                const message = `Bonjour! Mon nom est:\n${modalNameInp.value}.\n\nMon email:\n${modalEmailInp.value}.\n\nMon téléphone:\n${modalPhoneInp.value}.\n\nMessage:\n${modalMessageInp.value}`
                 const url = `https://wa.me/${targetNumber}?text=${encodeURIComponent(message)}`;
                 window.open(url, "_blank");
                 modPositivMessage.classList.add("pozitiv-active");
